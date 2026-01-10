@@ -1,5 +1,7 @@
 package POM;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -18,8 +20,9 @@ public class ProfileUpdate extends Selenium{
 		// TODO Auto-generated constructor stub
 	}
 	
-	public void TestUpdate() throws InterruptedException {
+	public void TestUpdate() throws InterruptedException, IOException {
 		Click(UpdateProfileLocator);
+	//	takeScreenshot();
 		Click(ReumeHeadlineLocator);
 		SendKey(EditLocator, "Having 5 years of experience as QA Engineer with Automation Testing, API Testing, Manual Testing, SQL Testing with the Tools like Selenium, java, Maven, POM, TestNG, Rest Assured, BDD, API Postman,… Along with other tools like JIRA,GIT etc.");
 		Click(SaveLocator);

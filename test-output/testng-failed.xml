@@ -6,6 +6,7 @@
       <class name="com.Runner.Runner">
         <methods>
           <include name="Run"/>
+          <include name="Close"/>
           <include name="IntBrowser"/>
         </methods>
       </class> <!-- com.Runner.Runner -->

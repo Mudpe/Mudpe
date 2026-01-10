@@ -1,5 +1,8 @@
 package POM;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.openqa.selenium.By;
 
 public class Xpath {
@@ -26,6 +29,15 @@ public class Xpath {
 	
 	private static final By Loinname6 = By.xpath("//span[contains(text(),'Email ID/Username cannot be left blank')]");
 	// By using contains text
+	
+	public static void main(String[] args) {
+		Date date = new Date();
+		System.out.println(date);
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/YYYY;HH-mm-ss");
+		String date1 = sdf.format(date);
+		System.out.println(date1);
+	}
 	
 	
 	

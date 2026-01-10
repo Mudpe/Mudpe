@@ -1,5 +1,7 @@
 package com.Runner;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -9,7 +11,7 @@ import org.testng.annotations.Test;
 import POM.Login;
 import POM.ProfileUpdate;
 
-@Listeners(com.Listner.HTMLReport2.class)
+@Listeners(com.Listner.TestReports.class)
 
 
 public class Runner {
@@ -28,7 +30,7 @@ public class Runner {
 	}
 	
 	@Test
-	public void Run () throws InterruptedException {
+	public void Run () throws InterruptedException, IOException {
 		login.TestLogin("mudpeabhilash95@gmail.com", "123456");
 		profileUpdate.TestUpdate();
 	}
